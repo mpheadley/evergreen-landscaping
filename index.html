@@ -128,7 +128,7 @@
       min-height: 100vh;
       background:
         linear-gradient(135deg, rgba(15,26,51,0.92) 0%, rgba(15,26,51,0.75) 50%, rgba(192,34,42,0.15) 100%),
-        url('https://images.unsplash.com/photo-1636761358757-0a616eb9e17e?w=1600&q=80') center/cover no-repeat;
+        url('images/randall-with-mower.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
       padding: 72px 1.5rem 0;
@@ -409,7 +409,14 @@
       justify-content: center;
       margin-bottom: 1.5rem;
       clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
-      font-size: 1.6rem;
+    }
+    .service-icon svg {
+      width: 28px; height: 28px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .service-card h3 {
@@ -485,6 +492,21 @@
       box-shadow: 0 2px 16px rgba(0,0,0,0.07);
       position: relative;
     }
+    .step-icon {
+      width: 2.25rem;
+      height: 2.25rem;
+      color: var(--red);
+      margin-bottom: 1rem;
+    }
+    .step-icon svg {
+      width: 100%;
+      height: 100%;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
     .step-number {
       font-family: 'Oswald', sans-serif;
       font-size: 3rem;
@@ -539,11 +561,13 @@
     .why-left .section-label { color: rgba(192,34,42,0.8); }
     .why-left .section-title { color: var(--white); }
 
-    .why-left img {
-      width: 220px;
-      margin-top: 2.5rem;
-      opacity: 0.9;
-      filter: drop-shadow(0 4px 20px rgba(192,34,42,0.25));
+    .why-photo {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 2rem;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.45), 4px 4px 0 var(--red);
     }
 
     .why-grid {
@@ -566,8 +590,19 @@
     }
 
     .why-item .icon {
-      font-size: 1.5rem;
+      width: 2rem;
+      height: 2rem;
       margin-bottom: 0.75rem;
+      color: var(--red-light);
+    }
+    .why-item .icon svg {
+      width: 100%;
+      height: 100%;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .why-item h4 {
@@ -704,9 +739,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
       flex-shrink: 0;
       clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);
+    }
+    .contact-detail .icon svg {
+      width: 20px; height: 20px;
+      stroke: var(--white);
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .contact-detail .text {
@@ -999,7 +1041,7 @@
 
 <!-- Sticky call button -->
 <a href="tel:2564199069" class="sticky-call" aria-label="Call us now">
-  <span class="phone-icon">📞</span>
+  <span class="phone-icon"><svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
   (256) 419-9069
 </a>
 
@@ -1017,7 +1059,7 @@
       <a href="#services">Services</a>
       <a href="#why-us">Why Us</a>
       <a href="#contact">Contact</a>
-      <a href="tel:2564199069" class="nav-cta">📞 (256) 419-9069</a>
+      <a href="tel:2564199069" class="nav-cta"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:0.3rem"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(256) 419-9069</a>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -1080,7 +1122,7 @@
   <div class="services-grid">
     <!-- Engine Repair -->
     <div class="service-card reveal reveal-delay-1">
-      <div class="service-icon">🔧</div>
+      <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
       <h3>Small Engine Repair</h3>
       <p>We diagnose and fix what others give up on. From lawn mowers and chainsaws to ATVs and generators — if it has a small engine, we work on it.</p>
       <ul class="service-list">
@@ -1094,7 +1136,7 @@
     </div>
     <!-- Hauling -->
     <div class="service-card reveal reveal-delay-2">
-      <div class="service-icon">🚛</div>
+      <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
       <h3>Hauling &amp; Junk Removal</h3>
       <p>Comprehensive hauling for vehicles, equipment, and junk. We'll take broken cars, trucks, motorcycles, ATVs — even lawn equipment — at no cost when you sign over the title.</p>
       <ul class="service-list">
@@ -1116,7 +1158,7 @@
       Got a Junk Vehicle Taking Up Space?
       <span>We'll haul it away FREE when you sign over the title — cars, trucks, ATVs, motorcycles, lawn equipment &amp; more.</span>
     </h2>
-    <a href="tel:2564199069" class="btn-white">📞 Call for Free Pickup</a>
+    <a href="tel:2564199069" class="btn-white"><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:0.4rem"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call for Free Pickup</a>
   </div>
 </div>
 
@@ -1128,16 +1170,19 @@
   </div>
   <div class="steps-grid">
     <div class="step-card reveal reveal-delay-1">
+      <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
       <div class="step-number">01</div>
       <h3>Text or Call</h3>
       <p>Tell us what you need — a repair or a haul-away. We'll get you a straight answer fast.</p>
     </div>
     <div class="step-card reveal reveal-delay-2">
+      <div class="step-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
       <div class="step-number">02</div>
       <h3>We Come to You</h3>
       <p>We offer convenient pickup for repairs and free estimates for rental clean-outs. No hauling it yourself.</p>
     </div>
     <div class="step-card reveal reveal-delay-3">
+      <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
       <div class="step-number">03</div>
       <h3>Peace of Mind</h3>
       <p>We fix your gear or clear your space, leaving you with one less thing to worry about.</p>
@@ -1149,33 +1194,34 @@
 <section class="why-us" id="why-us">
   <div class="why-inner">
     <div class="why-left reveal">
-      <p class="section-label">Your Local Partner</p>
-      <h2 class="section-title">Repairs &amp; Removal.<br><em>Done Right.</em></h2>
-      <p style="color:rgba(255,255,255,0.7);line-height:1.7;margin:1.25rem 0 1.5rem;font-size:1.05rem;">At Stephens Small Engine, we believe a clean property and working equipment should be easy to come by. We've helped Anniston neighbors clear out junk and get back to work with reliable service and honest pricing.</p>
+      <p class="section-label">About Randall</p>
+      <h2 class="section-title">Your Neighbor.<br><em>Your Mechanic.</em></h2>
+      <p style="color:rgba(255,255,255,0.7);line-height:1.7;margin:1.25rem 0 0.85rem;font-size:1.05rem;">Randall Stephens is a U.S. veteran, husband, and father who built this business on the same values he carried in uniform — hard work, honesty, and taking care of the community he calls home.</p>
+      <p style="color:rgba(255,255,255,0.7);line-height:1.7;margin:0 0 1.5rem;font-size:1.05rem;">When your equipment breaks down or your property needs clearing, you're not calling a call center — you're calling a neighbor who shows up, does the job right, and treats you fairly.</p>
       <ul style="list-style:none;padding:0;margin:0 0 1.75rem;display:flex;flex-direction:column;gap:0.6rem;">
         <li style="color:rgba(255,255,255,0.85);font-size:0.95rem;">✔ <strong>Small Engine Service</strong> — Mowers, ATVs, Motorcycles, and more.</li>
         <li style="color:rgba(255,255,255,0.85);font-size:0.95rem;">✔ <strong>Free Hauling</strong> — Junk cars, trucks, and equipment, even with title issues.</li>
       </ul>
-      <img src="images/logo.png" alt="Stephens Small Engine">
+      <img src="images/randall-with-mower.jpg" alt="Randall Stephens working on a mower" class="why-photo" loading="lazy">
     </div>
     <div class="why-grid">
       <div class="why-item reveal reveal-delay-1">
-        <div class="icon">🛠️</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <h4>Experienced Technicians</h4>
         <p>Years of hands-on experience with all major small engine brands and models.</p>
       </div>
       <div class="why-item reveal reveal-delay-2">
-        <div class="icon">📍</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <h4>Locally Owned</h4>
         <p>Serving Anniston, Calhoun County, and surrounding communities in Northeast Alabama.</p>
       </div>
       <div class="why-item reveal reveal-delay-3">
-        <div class="icon">💰</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
         <h4>Free Estimates</h4>
         <p>No surprise charges. We give you a straight estimate before any work begins.</p>
       </div>
       <div class="why-item reveal reveal-delay-4">
-        <div class="icon">⚡</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
         <h4>Fast Turnaround</h4>
         <p>We know you need your equipment running. We work efficiently and communicate clearly.</p>
       </div>
@@ -1200,21 +1246,21 @@
       <p class="section-label">Get In Touch</p>
       <h2 class="section-title">Ready to <em>Get Started?</em></h2>
       <div class="contact-detail">
-        <div class="icon">📞</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
         <div class="text">
           <span class="label">Phone</span>
           <a href="tel:2564199069">(256) 419-9069</a>
         </div>
       </div>
       <div class="contact-detail">
-        <div class="icon">📍</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <div class="text">
           <span class="label">Location</span>
           <span>Anniston, AL — serving Calhoun County &amp; surrounding areas</span>
         </div>
       </div>
       <div class="contact-detail">
-        <div class="icon">⏰</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <div class="text">
           <span class="label">Hours</span>
           <span>Call for current availability</span>

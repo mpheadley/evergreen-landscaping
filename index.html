@@ -22,7 +22,7 @@
       --gray-light: #e5e7eb;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
 
     body {
       font-family: 'Source Sans 3', sans-serif;
@@ -1029,7 +1029,7 @@
       .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
       .footer-top { grid-template-columns: 1fr; gap: 2rem; }
       nav { display: none; }
-      nav.open { display: flex; flex-direction: column; position: fixed; top: 72px; left: 0; right: 0; background: var(--navy-deep); padding: 1.5rem; gap: 0.25rem; }
+      nav.open { display: flex; flex-direction: column; position: fixed; top: 72px; left: 0; right: 0; background: var(--navy-deep); padding: 1.5rem; gap: 0.25rem; z-index: 200; }
       .hamburger { display: flex; }
       .why-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
@@ -1519,6 +1519,7 @@
   const hamburger = document.getElementById('hamburger');
   const nav = document.getElementById('main-nav');
   hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 
   // Scroll reveal — add js-reveal class first so elements start hidden only when JS runs
   const reveals = document.querySelectorAll('.reveal');
@@ -1537,7 +1538,7 @@
   function handleSubmit(e) {
     e.preventDefault();
     const btn = e.target.querySelector('.form-submit');
-    btn.textContent = '✓ Message Sent! We'll be in touch.';
+    btn.textContent = "✓ Message Sent! We'll be in touch.";
     btn.style.background = '#1a5225';
     btn.disabled = true;
   }

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Evergreen Lawn & Landscape | Nashville, TN</title>
+  <meta name="description" content="Call or request a free estimate from Evergreen Lawn & Landscape in Nashville, TN. Fast response, no obligation. (615) 555-0194. Licensed, insured, upfront pricing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-page {
+      padding: 5rem 1.5rem 6rem;
+      background: var(--off-white);
+    }
+
+    .contact-page-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      color: var(--navy-deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-left > p {
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-block h3 {
+      font-size: 0.7rem;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .big-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: var(--navy-deep);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+
+    .big-phone:hover { color: var(--blue); }
+
+    .big-phone-sub {
+      font-size: 0.85rem;
+      color: var(--gray);
+      margin-top: 0.25rem;
+    }
+
+    .estimate-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(46,125,79,0.08);
+      border: 1px solid rgba(46,125,79,0.25);
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      margin-top: 0.75rem;
+    }
+
+    .estimate-badge::before {
+      content: '';
+      width: 7px; height: 7px;
+      background: var(--blue);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @media (max-width: 900px) {
+      .contact-page-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 3C9 3 5 7 5 11c0 3 2 5.5 5 6.5V21h4v-3.5c3-1 5-3.5 5-6.5 0-4-4-8-7-8z" stroke="none"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="name">Evergreen Lawn &amp; Landscape</span>
+        <span class="tagline">Nashville, TN &middot; Licensed &amp; Insured</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="tel:6155550194" class="nav-cta">&#128222; Call Now</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">Reach Us</div>
+    <h1>Get a Free Estimate</h1>
+    <p>Call us or fill out the form — we'll get back to you quickly, walk your property, and give you a clear quote with no pressure and no obligation.</p>
+  </div>
+</section>
+
+<!-- ── CONTACT PAGE ── -->
+<section class="contact-page">
+  <div class="contact-page-inner">
+
+    <!-- Left: Contact Info -->
+    <div class="contact-left">
+      <div class="section-label">Contact Info</div>
+      <h2>Let's Talk</h2>
+      <p>The fastest way to reach us is a phone call. For non-urgent requests, fill out the form and we'll respond within one business day.</p>
+
+      <div class="contact-block">
+        <h3>Phone</h3>
+        <a href="tel:6155550194" class="big-phone">&#128222; (615) 555-0194</a>
+        <p class="big-phone-sub">Mon&ndash;Fri 7am&ndash;6pm &middot; Sat 8am&ndash;4pm</p>
+        <div class="estimate-badge">Free estimates — no obligation</div>
+      </div>
+
+      <div class="contact-block">
+        <h3>Email</h3>
+        <div class="contact-detail" style="margin-bottom: 0;">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="text">
+            <span class="label">Email Us</span>
+            <a href="mailto:info@evergreenlawntn.com">info@evergreenlawntn.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-block">
+        <h3>Business Hours</h3>
+        <table class="hours-table">
+          <tbody>
+            <tr>
+              <td>Monday &ndash; Friday</td>
+              <td>7:00 am &ndash; 6:00 pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 am &ndash; 4:00 pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="hours-emergency">
+          &#127807; We respond to estimate requests within one business day
+        </div>
+      </div>
+
+      <div class="contact-block">
+        <h3>Service Area</h3>
+        <div class="contact-detail" style="margin-bottom: 0;">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="text">
+            <span class="label">Coverage</span>
+            <span>Nashville, Brentwood, Franklin, Bellevue, Antioch, Hermitage, Madison, Donelson, and surrounding Middle Tennessee communities.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-block">
+        <h3>License Info</h3>
+        <p style="font-size: 0.9rem; color: var(--gray); line-height: 1.6;">Tennessee Contractor License <strong style="color: var(--navy-deep);">#LAC789012</strong><br>
+        Fully bonded &amp; insured. Verify at <a href="#" style="color: var(--blue);">tn.gov/commerce</a>.</p>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form">
+      <h3>Request a Free Estimate</h3>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(615) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Property Address</label>
+          <input type="text" id="address" name="address" placeholder="123 Main St, Nashville, TN">
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option>Lawn Mowing &amp; Maintenance</option>
+            <option>Landscape Design &amp; Installation</option>
+            <option>Tree &amp; Shrub Trimming</option>
+            <option>Irrigation System Installation &amp; Repair</option>
+            <option>Mulching &amp; Bed Care</option>
+            <option>Hardscaping (Patios &amp; Walkways)</option>
+            <option>Seasonal Cleanup</option>
+            <option>Sod Installation &amp; Seeding</option>
+            <option>Multiple Services / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="timeline">When Do You Need This Done?</label>
+          <select id="timeline" name="timeline">
+            <option value="">Select...</option>
+            <option>As Soon As Possible</option>
+            <option>Within 1–2 Weeks</option>
+            <option>This Month</option>
+            <option>Planning for Next Season</option>
+            <option>Just Getting a Quote</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Describe Your Property &amp; Goals</label>
+          <textarea id="message" name="message" placeholder="Tell us about your yard — size, what you're looking for, anything you'd like improved..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Estimate Request &rarr;</button>
+        <p style="font-size: 0.8rem; color: var(--gray); margin-top: 1rem; text-align: center; line-height: 1.5;">We respond to all requests within one business day. For faster service, call us at <a href="tel:6155550194" style="color: var(--blue);">(615) 555-0194</a>.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── TRUST STRIP ── -->
+<section style="background: var(--navy-deep); padding: 3rem 1.5rem;">
+  <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center;">
+    <div>
+      <div style="font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--blue-light);">14+</div>
+      <div style="font-size: 0.75rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">Years in Nashville</div>
+    </div>
+    <div>
+      <div style="font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--blue-light);">4.9&#9733;</div>
+      <div style="font-size: 0.75rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">Google Rating</div>
+    </div>
+    <div>
+      <div style="font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--blue-light);">1,800+</div>
+      <div style="font-size: 0.75rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">Properties Served</div>
+    </div>
+    <div>
+      <div style="font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--blue-light);">Free</div>
+      <div style="font-size: 0.75rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">Estimates</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3C9 3 5 7 5 11c0 3 2 5.5 5 6.5V21h4v-3.5c3-1 5-3.5 5-6.5 0-4-4-8-7-8z" stroke="none"/></svg>
+          </div>
+          <span class="name">Evergreen Lawn &amp; Landscape</span>
+        </a>
+        <p>Nashville's trusted landscaping company since 2010. Licensed, bonded, and insured. Serving homeowners across Middle Tennessee.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Google">G</a>
+          <a href="#" aria-label="Nextdoor">N</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Lawn Mowing</a>
+        <a href="services.html">Landscape Design</a>
+        <a href="services.html">Tree &amp; Shrub Care</a>
+        <a href="services.html">Irrigation Systems</a>
+        <a href="services.html">Hardscaping</a>
+        <a href="services.html">Seasonal Cleanup</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><strong>Phone:</strong> <a href="tel:6155550194">(615) 555-0194</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@evergreenlawntn.com">info@evergreen<wbr>lawntn.com</a></p>
+        <p style="margin-top:0.75rem"><strong>Hours:</strong><br>Mon&ndash;Fri: 7am&ndash;6pm<br>Sat: 8am&ndash;4pm<br>Closed Sundays</p>
+        <p style="margin-top:0.75rem; font-size:0.8rem; color:rgba(255,255,255,0.3)">TN Contractor License #LAC789012</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Evergreen Lawn &amp; Landscape. All rights reserved. Nashville, TN.</span>
+      <span>Licensed &middot; Bonded &middot; Insured</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:6155550194" class="sticky-call" aria-label="Call Evergreen Lawn and Landscape">
+  <span class="phone-icon">&#128222;</span>
+  (615) 555-0194
+</a>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', function() {
+    nav.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', nav.classList.contains('open'));
+  });
+</script>
+</body>
+</html>
